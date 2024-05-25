@@ -195,7 +195,9 @@ Insights/Findings:
 * Mass layoffs took place in the months of November 2022 and January 2023 with Layoff counts of 53K and 85K. 
 
 
-
+Analysis by Aarthi Duraisingam, Data Analyst
+[Linkedin](www.linkedin.com/in/aarthi-duraisingam-2438b7248)
+Date: 15/05/24
 
 
 
