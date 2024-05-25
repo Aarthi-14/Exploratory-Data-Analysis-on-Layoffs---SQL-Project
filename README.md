@@ -53,9 +53,16 @@ Insights/Findings:
 * Amazon ranked No1 in Retail Industry with highest layoff count as 18.2k.
 * Microsoft & Ericsson has the layoff counts of 10k & 8k in Other Industry Category.
 
+Q4. Find the Total_laid_off by Each Year 
+```sql
+select year(`date`) as year, sum(total_laid_off) as total_laid_off
+from layoffs_staging2
+where year(`date`) is not null
+group by 1
+order by 1 desc;
+```
 
-
-
+![image](https://github.com/Aarthi-14/Exploratory-Data-Analysis-on-Layoffs---SQL-Project/assets/147639053/ebc2ae08-8631-4661-9b8e-631829e2b300)
 
 
 
