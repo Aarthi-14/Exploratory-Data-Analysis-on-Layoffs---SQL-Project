@@ -183,13 +183,16 @@ order by 1 asc ;
 Insights/Findings:
 * Mass layoffs took place in the months of November 2022 and January 2023 with Layoff counts of 53K and 85K. 
 
-
-
-
-
-
-
-
+### Key Insights:
+* Mass layoffs took place in the months of November 2022 and January 2023 with Layoff counts of 53K and 85K. 
+* From year 2020 till 2023, Total laid off counts are highest in the Consumer Industry, followed by Retail, Others & Transportation & so on.
+* Consumer Industry has the highest total Laid off with 45,182 count out of which Google ranked No1 with Layoff count of 12,000, followed by Meta,Twitter& so on.
+* Amazon ranked No1 in Retail Industry with highest layoff count as 18.2k.
+* In 2022, the layoff count peaked at the highest level of 160,000 among all the years. However, the year 2023 has seen an almost 125,000 layoff count based on the data available for the first three months, suggesting that it could potentially surpass the peak if the trend continues until December 2023.
+* 204k people were laid off during the post-IPO stage. This occurred due to cost-cutting actions taken by companies as they transitioned from private to public status in the stock market.
+* In 2020, data shows that most layoffs were in the Transportation & travel industry due to the widespread impact of the coronavirus pandemic affecting countries worldwide. Subsequently, from 2021 onwards, layoffs occurred not only in the consumer and retail industries but also in other sectors.
+* For subsequent years from 2020 to 2023, United States ranked No1 country in Layoffs.
+* Mass layoffs took place in the months of November 2022 and January 2023 with Layoff counts of 53K and 85K. 
 
 
 
