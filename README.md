@@ -13,9 +13,9 @@ The file is in excel format(File Name: layoffs.xlsx) of columns company, locatio
 
 Q1:  Calculate the total no. of companies, that undergoes Layoffs.
 
-```select count(distinct company) as Total_Companies
-from layoffs_staging2
-where total_laid_off is not null
-or percentage_laid_off is not null```
+``` select count(distinct company) as Total_Companies
+    from layoffs_staging2
+    where total_laid_off is not null
+    or percentage_laid_off is not null ```
 
 
