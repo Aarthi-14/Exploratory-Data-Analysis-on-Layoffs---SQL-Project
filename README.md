@@ -25,4 +25,40 @@ Insights/Findings:
 
 * There were 1628 companies in total, which undergone layoffs from March 2020 to March 2023 as per the dataset.
 
+Q2. Total No. of companies in which 100% laid off happened
+```sql
+select count(*) as complete_Laid_off
+from layoffs_staging2
+where percentage_laid_off =1;
+```
+
+Insights/Findings:
+* There were 116 companies in total, Where 100% laid off took place.
+
+Q3. Find the industry & total_laid_off 
+```sql
+select industry, sum(total_laid_off) as total_laid_off
+from layoffs_staging2
+where year(`date`) is not null
+group by 1
+order by 2 desc;
+```
+
+Insights/Findings:
+* From year 2020 till 2023, Total laid off counts are highest in the Consumer Industry, followed by Retail, Others & Transportation & so on.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
