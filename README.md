@@ -61,8 +61,46 @@ where year(`date`) is not null
 group by 1
 order by 1 desc;
 ```
+![image](https://github.com/Aarthi-14/Exploratory-Data-Analysis-on-Layoffs---SQL-Project/assets/147639053/96260de2-5da1-45d0-bcbe-fb251e53dce4)
 
-![image](https://github.com/Aarthi-14/Exploratory-Data-Analysis-on-Layoffs---SQL-Project/assets/147639053/ebc2ae08-8631-4661-9b8e-631829e2b300)
+Insights/Findings:
+* In 2022, the layoff count peaked at the highest level of 160,000 among all the years.
+* However, the year 2023 has seen an almost 125,000 layoff count based on the data available for the first three months, suggesting that it could potentially surpass the peak if the trend continues until December 2023.
+
+Q5. Find the Total_laid_off count by each stage.
+```sql
+select stage, sum(total_laid_off) as total_laid_off
+from layoffs_staging2
+group by 1
+order by sum(total_laid_off) desc;
+```
+![image](https://github.com/Aarthi-14/Exploratory-Data-Analysis-on-Layoffs---SQL-Project/assets/147639053/356d8fee-407d-411a-aa66-fc8cff6f2305)
+
+Insights/Findings:
+* 204k people were laid off during the post-IPO stage. This occurred due to cost-cutting actions taken by companies as they transitioned from private to public status in the stock market.
+
+Q6.  Calculating top 5 company based on total Layoff for each year
+```sql
+with company_year as (
+select company, year(`date`) as years, sum(total_laid_off) as total_laid_off
+from layoffs_staging2
+group by 1,2
+order by 2 desc
+), company_rank as
+(select *, dense_rank() over (partition by years order by total_laid_off desc) as ranking
+from company_year
+where years is not null)
+select *
+from company_rank
+where ranking <= 5;
+```
+![image](https://github.com/Aarthi-14/Exploratory-Data-Analysis-on-Layoffs---SQL-Project/assets/147639053/d2323de6-6574-4182-ae85-e941178c3c8b)
+
+Insights/Findings:
+* In 2020, data shows that most layoffs were in the Transportation & travel industry due to the widespread impact of the coronavirus pandemic affecting countries worldwide.
+* Subsequently, from 2021 onwards, layoffs occurred not only in the consumer and retail industries but also in other sectors.
+
+
 
 
 
