@@ -9,5 +9,13 @@ Our aim of this project is to do thorough Explanatory Data Analysis(EDA) on layo
 ### Source File:
 The file is in excel format(File Name: layoffs.xlsx) of columns company, location, industry, total laid-off, percentage laid-off, date, stage, country & funds raised in millions.
 
+### Exploratory Data Analysis(EDA):
+
+Q1:  Calculate the total no. of companies, that undergoes Layoffs.
+
+```select count(distinct company) as Total_Companies
+from layoffs_staging2
+where total_laid_off is not null
+or percentage_laid_off is not null;```
 
 
